@@ -39,6 +39,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
 .produtos {
     width: 940;
     margin: 0 auto;
@@ -59,6 +64,19 @@ nav a {
     border-radius: 10px;
 }
 
+.produtos li:hover {
+    border-color: red;
+}
+
+.produtos li:active {
+    border-color:blue;
+}
+
+.produtos li:hover h2{
+    font-size: 30px;
+}
+
+
 .produtos h2 {
     font-size: 20px;
     font-weight: bold;
@@ -66,4 +84,16 @@ nav a {
 
 .descricao {
     margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+    background: #F6DEFD;
+    padding: 40px 0;
+}
+
+.copyright {
+    color: red;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
