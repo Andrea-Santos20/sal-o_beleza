@@ -9,12 +9,26 @@ body {
 header {
 	background: #F6DEFD;
 	padding: 20px 0;
+	height: 180px;
+	display: flex;
 }
 
 .caixa {
-	position: relative;
+	/* position: relative; */
 	width: 940px;
 	margin: 0 auto;
+	display: flex;
+}
+
+.itens-header {
+	display: flex;
+
+}
+
+.logo {
+	width: 300px;
+	height: 300px;
+
 }
 
 nav {
@@ -45,6 +59,12 @@ nav a:hover {
 	width: 940px;
 	margin: 0 auto;
 	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	list-style: none;
 }
 
 .produtos li {
