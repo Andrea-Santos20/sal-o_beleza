@@ -1,40 +1,44 @@
 * {
     margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*css da página inicial*/
+
 header {
 	background: #F6DEFD;
 	padding: 20px 0;
-	height: 180px;
+	height: 130px;
 	display: flex;
 }
 
-.caixa {
-	/* position: relative; */
-	width: 940px;
-	margin: 0 auto;
+.logo-nav {
+	/* position: relative;  */
+	width: 100px;
+	/* margin: 0 auto; */
 	display: flex;
-}
-
-.itens-header {
-	display: flex;
-
+	align-items: center;	
 }
 
 .logo {
-	width: 300px;
-	height: 300px;
+	width: 100px;
+	height: 100px;
+	margin-left: 60px;
+	border-radius: 30px;
 
 }
 
 nav {
 	position: absolute;
-	top: 110px;
-	right: 0;
+	top: 65px;
+	margin-left: 680px;
+	/* right: 0; */
+	
 }
 
 nav li {
@@ -44,156 +48,44 @@ nav li {
 
 nav a {
 	text-transform: uppercase;
-	color: #000000;
+	color: #732ca2;
 	font-weight: bold;
-	font-size: 22px;
+	font-size: 12px;
 	text-decoration: none;
+	list-style: none;
+	transition: 2s;
+
 }
 
 nav a:hover {
-	color: red;
-	text-decoration: underline;
+	color: #dd00ff;
+	text-decoration: none;
 }
 
-.produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	list-style: none;
-}
-
-.produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px dotted #bd086b;
-	border-radius: 10px;
-}
-
-.produtos li:hover {
-    border-color: red;
-}
-
-.produtos li:active {
-    border-color:blue;
-}
-
-.produtos li:hover h2{
-    font-size: 30px;
-}
-
-
-.produtos h2 {
-	font-size: 20px;
-	font-weight: bold;
-}
-
-.produto-descricao {
-	font-size: 18px;
-}
-
-.produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
-}
-
-footer {
-	text-align: center;
-    background: #F6DEFD;
-	padding: 40px 0;
-}
-
-.copyright {
-	color: red;
-    font-size: 13px;
-    margin: 20px 0 0;
-}
-
-form {
-	margin: 40px 0;
-}
-
-form label, form legend {
-	display:block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-
-.input-padrao {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 50%;
-}
-
-.checkbox {
-	margin: 20px 0;
-}
-
-.enviar {
-	width: 40%;
-	padding: 15px 0;
-	background: red;
-	color: white;
-	font-weight: bold;
-	font-size: 16px;
-	border: none;
-	border-radius: 8px;
-	transition: 2s all;
-	cursor: pointer;
-}
-
-.enviar:hover {
-	background-color: pink;
-	transform:  rotate(3deg) scale(1.2);
-	
-}
-
-table {
-    margin: 20px 0 40px;
-}
-
-thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
-}
-
-td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
-}
-
-/*css da página inicial*/
 .banner {
-    width:100%;
+    width: 100%;
+    height: 260px;
 }
 
-.titulo-centro {
+ .titulo-centro {
     text-align: center;
-    font-size: 2em;
+	font-size: 18px;
     margin: 0 0 1em;
-	clear: left;	
+	clear: left;
+	color: #732ca2;	
 }
+
 
 .principal {
 	padding: 3em 0;
-	background:#F6DEFD;
-	
+	background:#F6DEFD;	
 }
 
 .principal p {
     margin: 0 0 1em;
+	color: #bd086b;
+	font-size: 14px;
+	align-items: justify;
 }
 
 .principal strong {
@@ -207,7 +99,7 @@ td, th {
 .utensilios {
 	width: 120px;
     float: left;
-	margin: 0 20px 20px 0;
+	margin: 0 20px 20px 30px;
 }
 
 .mapa {
@@ -215,9 +107,16 @@ td, th {
 	background: linear-gradient( #F6DEFD, #ffcfce, #f8afb5) 
 }
 
+.mapa .titulo-centro {
+	color:#732ca2;
+	font-size: 18px;
+}
+
 .mapa p {
     margin: 0 0 2em;
     text-align: center;
+	font-size: 14px;
+	color: #bd086b;		
 }
 
 .mapa-conteudo {
@@ -228,6 +127,8 @@ td, th {
 .beneficios {
 	padding: 3em 0;
 	background: #f8afb5; 
+	color: #732ca2;
+	font-size: 16px;
 }
 
 .conteudo-beneficios {
@@ -243,6 +144,9 @@ td, th {
 
 .itens {
 	line-height: 1.5;
+	list-style: none;
+	color: #bd086b;
+	font-size: 14px;
 }
 
 .itens:first-child {
@@ -267,8 +171,177 @@ td, th {
 
 .video {
     width: 560px;
-    margin: 2em auto;
+    margin: 2em auto;	
+}
+
+/* css serviços */
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	list-style: none;
+	transition: 2s all;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px dotted #bd086b;
+	border-radius: 10px;
+	transition: 2s all;
+}
+
+.produtos li:hover {
+    border-color: #732ca2;
+	transition: 2s all;
+}
+
+.produtos li:active {
+    border-color:blue;
+	transition: 2s all;
+}
+
+.produtos li:hover h2{
+    font-size: 30px;
+	transition: 2s all;
+}
+
+.produtos h2 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.produtos .img-sobrancelha {
+	width: 75%;
+}
+
+.produto-descricao {
+	font-size: 18px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+/* css contato */
+
+#formulario {
+	margin: 40px;
+	color: #bd086b;	
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 14px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 15px 25px;
+	width: 50%;
+	border-radius: 8px;
+	border: 1px solid #732ca2
+}
+
+#mensagem {
+	border-radius: 8px;
+	border: 1px solid #732ca2;
+	margim-bottom: 15px;
+}
+
+.contat {
+	border-radius: 8px;
+	border: 1px solid #732ca2;
+	margim-bottom: 15px;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 12%;
+	padding: 12px 0;
+	background: red;
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	border: none;
+	border-radius: 8px;
+	transition: 2s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background-color: pink;
+	transform:  rotate(3deg) scale(1.2);
 	
+}
+
+table {
+    margin: 20px 0 40px;
+	justify-content: center;
+}
+
+thead {
+    background: #555555;
+    color: white;
+	border-radius: 8px;
+	border: 1px solid #732ca2;
+    font-weight: bold;
+}
+
+td, th {
+	font-size: 12px;
+    border-radius: 8px;
+	border: 1px solid #732ca2;
+    padding: 8px 15px;
+}
+
+.rede-social {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+
+.instagram {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 12px;
+}
+
+footer {
+	text-align: center;	
+    background: #F6DEFD;
+	padding: 10px 0 12px;
+}
+
+.copyright {
+	color: #732ca2;
+    font-size: 13px;
+    margin: 10px;
 }
 
 @media screen and (max-width: 480px) {

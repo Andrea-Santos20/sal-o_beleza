@@ -1,6 +1,4 @@
-* {
-    margin:0%;    
-}
+
 
 header {
     background: #F6DEFD;
@@ -8,15 +6,15 @@ header {
 }
 
 
-/* h1 .logo {
-    width: 10;
-   margin-top: 20px;
+h1 .logo {
+   width: 10;
+   margin-top: 10px;
       
-} */
+}
 
 .caixa {
     position: relative;
-    width: 940px;
+    width: 150px;
     margin: 50px;
 }
 
